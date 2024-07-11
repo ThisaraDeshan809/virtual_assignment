@@ -18,4 +18,9 @@ class TaskAssign extends Model
         'remark',
         'status',
     ];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }

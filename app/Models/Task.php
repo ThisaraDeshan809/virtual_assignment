@@ -14,4 +14,9 @@ class Task extends Model
         'description',
         'status',
     ];
+
+    public function taskAssign()
+    {
+        return $this->hasOne(TaskAssign::class);
+    }
 }

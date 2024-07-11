@@ -5,7 +5,7 @@
                 Apps
             </li>
             <li class="active-page">
-                <a href="index.html" class="active"><i class="material-icons-outlined">dashboard</i>Dashboard</a>
+                <a href="/" class="active"><i class="material-icons-outlined">dashboard</i>Dashboard</a>
             </li>
             <li>
                 <a href="#">
@@ -15,10 +15,10 @@
                 </a>
                 <ul class="sub-menu">
                     <li>
-                        <a href="">Create New</a>
+                        <a href="{{route('Employees.create')}}">Create New</a>
                     </li>
                     <li>
-                        <a href="">List Employees</a>
+                        <a href="{{route('Employees.index')}}">List Employees</a>
                     </li>
                 </ul>
             </li>
@@ -30,10 +30,10 @@
                 </a>
                 <ul class="sub-menu">
                     <li>
-                        <a href="">Create New</a>
+                        <a href="{{route('Tasks.create')}}">Create New</a>
                     </li>
                     <li>
-                        <a href="">List Tasks</a>
+                        <a href="{{route('Tasks.index')}}">List Tasks</a>
                     </li>
                 </ul>
             </li>

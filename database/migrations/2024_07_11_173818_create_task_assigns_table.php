@@ -17,11 +17,10 @@ return new class extends Migration
             $table->id();
             $table->integer('user_id');
             $table->integer('task_id');
-            $table->string('start_at');
-            $table->string('finished_at');
-            $table->string('deadline_at');
+            $table->string('start_at')->nullable();
+            $table->string('finished_at')->nullable();
+            $table->string('deadline_at')->nullable();
             $table->string('remark');
-            $table->string('status');
             $table->timestamps();
         });
     }
